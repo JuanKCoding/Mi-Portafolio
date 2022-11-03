@@ -26,13 +26,19 @@ body{
     }
 }
 
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
 /* BARRA DE NAVEGACION */
 
 .topnav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 70px;
     padding: 0% 4% 0% 4%;
 }
 
@@ -902,59 +908,143 @@ footer {
 
 /* HABILIDADES */
 
-.contenedor-habilidades{
-    text-align: center;
-    margin: 100px 100px 100px 250px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-    width: 1300px;
-    height: 700px;
-    border-radius: 30px;
-}
-
-.sub-contenedor{
-    display: inline-block;
-    text-align: center;
-    margin: 10px 20px 10px 30px;
-    padding-top: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 5px;
-    width: 300px;
-    height: 300px;
-    border: solid #ffffff 2px;
-    border-radius: 30px;
-    
-}
-
-.titulo-habilidades{
+.container__card{
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 80px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.card{
     width: 300px;
-    margin: 0px 0px 30px 507px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 35px;
-    margin-top: 0px;
-    font-weight: bold;
+    position: relative;
+    margin: 50px 50px 50px 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
     border-radius: 20px;
 }
 
-.text-box{
-    margin: 0px;
-    padding: 0px;
-    color: #ffffff;
-    font-weight: 500;
+.card:hover{
+    box-shadow: 1px 1px 20px -10px #20202049;
 }
 
-.img-cert{
-    margin-top: 40px;
-    padding: 0px;
-    width: 200px;
-    height: 200px;
+.card:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
 }
+
+.card:hover .icon{
+    margin-top: -110px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background: #EFF3F5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.icon i{
+    font-size: 150px;
+    color: #fff;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.info__description{
+    width: 100%;
+    height: 170px;
+    color: #474747;
+    background: #EFF3F5;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.info__description input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background: #ea1538;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    transition: box-shadow 300ms;
+}
+
+.info__description input:hover{
+    box-shadow: 1px 1px 30px -5px #20202070;
+}
+
+/*COLOR DE LAS CARD*/
+
+.c1:hover .icon{
+    background: #DD4B25;
+}
+
+.c1 .icon i{
+    color: #DD4B25;
+}
+
+.c1:hover .icon i{
+    color: #fff;
+}
+
+
+.c2:hover .icon{
+    background: #146EB0;
+}
+
+.c2 .icon i{
+    color: #146EB0;
+}
+
+.c2:hover .icon i{
+    color: #fff;
+}
+
+
+.c3:hover .icon{
+    background: #E8B600;
+}
+
+.c3 .icon i{
+    color: #E8B600;
+}
+
+.c3:hover .icon i{
+    color: #fff;
+}
+
+/*FIN DE LAS CARD*/
 
