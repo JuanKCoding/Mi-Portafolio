@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <title>Habilidades | Juan Code</title>
 
 </head>
 <body>
-
+    <div id="particles-js"></div>
     <nav>
         <div class="topnav">
             <h2 class="logo">JuanK<span>Coding</span></h2>
@@ -27,24 +28,48 @@
         </div>
     </nav>
 
-    <div class="contenedor-habilidades">
-        <p class="color-white titulo-habilidades">HABILIDADES</p>
-        <div class="sub-contenedor">
-            <p class="text-box">CERTIFICADO DESARROLLO WEB</p>
-            <img src="assets/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="certificado 1" class="img-cert">
+    <div class="body__page">
+
+        <div class="container__card">
+
+            <div class="card c1">
+                <div class="icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="info__description">
+                    <h2>CERTIFICADO HTML</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repellendus dolor dolorem voluptate aut expedita doloribus molestias modi libero excepturi cum perferendis laboriosam praesentium provident suscipit, eius impedit quidem magnam ipsa similique necessitatibus nam delectus nesciunt magni! Temporibus autem, reprehenderit amet quidem aliquid architecto, blanditiis, neque quam asperiores eum enim.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+
+            <div class="card c2">
+                <div class="icon">
+                    <i class="fab fa-css3"></i>
+                </div>
+                <div class="info__description">
+                    <h2>CERTIFICADO CSS</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repellendus dolor dolorem voluptate aut expedita doloribus molestias modi libero excepturi cum perferendis laboriosam praesentium provident suscipit, eius impedit quidem magnam ipsa similique necessitatibus nam delectus nesciunt magni! Temporibus autem, reprehenderit amet quidem aliquid architecto, blanditiis, neque quam asperiores eum enim.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+
+            <div class="card c3">
+                <div class="icon">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="info__description">
+                    <h2>CERTIFICADO JAVASCRIPT</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repellendus dolor dolorem voluptate aut expedita doloribus molestias modi libero excepturi cum perferendis laboriosam praesentium provident suscipit, eius impedit quidem magnam ipsa similique necessitatibus nam delectus nesciunt magni! Temporibus autem, reprehenderit amet quidem aliquid architecto, blanditiis, neque quam asperiores eum enim.</p>
+                    <input type="button" value="Leer Más">
+                </div>
+            </div>
+
+            
+
         </div>
 
-        <div class="sub-contenedor">
-            <p class="text-box">CERTIFICADO JAVA</p>
-            <img src="assets/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="certificado 1" class="img-cert">
-        </div>
-
-        <div class="sub-contenedor">
-            <p class="text-box">CERTIFICADO C++</p>
-            <img src="assets/perfil-avatar-hombre-icono-redondo_24640-14044.jpg" alt="certificado 1" class="img-cert">
-        </div>
     </div>
-
 
     <footer>
         <div class="footer-content"> 
@@ -62,5 +87,8 @@
             <p><em>Copyright &copy; 2022 Juan Cruz Irazabal - Web Developer</em></p>
         </div>
     </footer>
+
+    <script src="particles.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
